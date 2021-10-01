@@ -20,6 +20,7 @@ class TestGetUserInfo(unittest.TestCase):
         @test Test that the function correctly counts the number of commits for a repo.
         """
         result = getUserInfo('kylerobots')
+        self.assertNotEqual(len(result), 0)
         # Pick two of the repositories
         self.assertEqual(result['algorithms'], 30,
                          'Repository reports the wrong number of commits.')
