@@ -24,11 +24,10 @@ def getUserInfo(username: str) -> Dict[str, int]:
     if user_result.status_code == 200:
         # The top level elements in the object are the repositories. So iterate through those to look up the number of
         # commits.
-        for repo in user_result:
+        for repo in user_result.json():
             repo_name = repo['name']  # type: ignore
             repo_url = 'https://api.github.com/repos/{0:s}/{1:s}/commits'.format(
                 username, repo_name)
-            # time.sleep(10)
             repo_result = requests.get(repo_url).json()
             # The top level elements of this response are the individual commits. Count them.
             commit_count = len(repo_result)
