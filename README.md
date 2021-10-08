@@ -1,6 +1,6 @@
 # ssw567-github-api
 
-[![Build Status](https://app.travis-ci.com/kylerobots/ssw567-github-api.svg?branch=main)](https://app.travis-ci.com/kylerobots/ssw567-github-api)
+[![Build Status](https://app.travis-ci.com/kylerobots/ssw567-github-api.svg?branch=HW05a_Mocking)](https://app.travis-ci.com/kylerobots/ssw567-github-api)
 
 A SSW 567 project to retrieve information from GitHub's API.
 
