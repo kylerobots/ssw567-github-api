@@ -10,6 +10,8 @@ from get_user_info import getUserInfo
 class TestGetUserInfo(unittest.TestCase):
     """!
     @brief A class to test the getUserInfo function.
+
+    These use the concepts presented in https://github.com/richkempinski/Mocks/blob/master/MockingPrimer.ipynb
     """
 
     @patch('requests.get')
