@@ -1,5 +1,8 @@
-from get_user_info import getUserInfo
+"""!
+Module to test the functionality of the get_user_info module.
+"""
 import unittest
+from get_user_info import getUserInfo
 
 
 class TestGetUserInfo(unittest.TestCase):
@@ -48,4 +51,4 @@ class TestGetUserInfo(unittest.TestCase):
         """
         # I got this pattern from the documentation for unittest.
         with self.assertRaises(TypeError, msg='Function does not handle wrong types.'):
-            result = getUserInfo(123)  # type: ignore
+            getUserInfo(123)  # type: ignore
